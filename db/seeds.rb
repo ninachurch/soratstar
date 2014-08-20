@@ -4,7 +4,7 @@ require 'faker'
 
 ##image links
 
-@images = ["http://i.imgur.com/3KXQPSl.jpg?1", "http://imgur.com/j05J4cu", "http://imgur.com/qHPQ3QE"]
+@images = ["http://i.imgur.com/3KXQPSl.jpg?1", "http://i.imgur.com/j05J4cu.jpg?1", "http://i.imgur.com/qHPQ3QE.jpg?1"]
 
 ##create sample themes
 4.times do
