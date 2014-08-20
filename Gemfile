@@ -15,6 +15,11 @@ gem 'rake'
 
 gem 'shotgun'
 
+# for amazon ruby gem
+gem 'rack-cache'
+gem 'activesupport'
+gem 'amazon-ecs'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

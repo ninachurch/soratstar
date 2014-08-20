@@ -25,3 +25,5 @@ chromedriver.log
 bin/
 .env
 *.swp
+
+$AWS_key = AKIAIG36BT74UVR43Z2Q
