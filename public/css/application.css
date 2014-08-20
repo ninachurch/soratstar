@@ -1,4 +1,4 @@
-body {
+/*body {
   background-color: rgb(2, 201, 201);
 }
 
@@ -12,19 +12,19 @@ body {
   font-family: 'Yellowtail', cursive;
   font-size: 50pt;
   font-weight: 300;
-/*  position: absolute;
+  position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
   width: 500px;
   height: 500px;
   margin-top: -250px; /* Half the height
-  margin-left: -250px; /* Half the width */*/
+  margin-left: -250px; /* Half the width */
 }
-
+/*
 .subtitle {
   font-family: 'Source Sans Pro', sans-serif, Normal 400;
   font-size: 30pt;
   font-weight: 100;
-}
-*/
+}*/
+/*/

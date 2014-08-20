@@ -7,5 +7,6 @@ get '/' do
 end
 
 get '/home' do
-
+  # @crafts = Craft.all
+  erb :home
 end
