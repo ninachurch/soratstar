@@ -3,7 +3,11 @@
 #      http://stackoverflow.com/questions/7243486/why-do-you-need-require-bundler-setup
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 
+
 require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
+
+require 'dotenv'
+Dotenv.load
 
 # Require gems we care about
 require 'rubygems'
@@ -20,7 +24,7 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 
-require 'amazon-ecs'
+require 'amazon/ecs'
 
 require 'httparty'
 
@@ -47,3 +51,11 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+##API Key call
+
+Amazon::Ecs.configure do |options|
+  options[:associate_tag] = ENV['ASSOCIATE_TAG']
+  options[:AWS_access_key_id] = ENV['AWS_ACCESS_KEY_ID']
+  options[:AWS_secret_key] = ENV['AWS_SECRET_KEY']
+end
