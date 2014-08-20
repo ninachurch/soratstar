@@ -7,12 +7,6 @@
     <title>The Solution to Stressful Big/Little Weeks.</title>
     <meta name="description" content="We help crafty big sisters rock their big/little weeks." />
 
-    <link href='http://fonts.googleapis.com/css?family=Yellowtail|Give+You+Glory|Petit+Formal+Script|Carrois+Gothic|Salsa|Leckerli+One' rel='stylesheet' type='text/css'>
-
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic|Droid+Sans|Yellowtail|Lato|Give+You+Glory|Petit+Formal+Script|Carrois+Gothic|Salsa|Leckerli+One' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
     <link rel="stylesheet" href="css/application.css"  type="text/css"/>
 </head>
 
@@ -28,7 +22,8 @@
 
     <div class="api-test">
         <%@res.items.each do |item|%>
-            <%=item.get_element('ItemAttributes')%>
+            <%item_attributes = item.get_element('ItemAttributes')%>
+            <%=item_attributes.get('Title')%>
         <%end%>
     </div>
 
