@@ -55,7 +55,7 @@ body {
   line-height: 1.42857143;
   color: #495252;
   /*background-color: #fff;*/
-  background-color: #53F1F1;
+  background-color: #F2FEFE;
   font-family: font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
 }
@@ -3257,9 +3257,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
+/*##Navbar */
 .navbar-default {
-  background-color: #FFC89A;
-  border-color: #FFA458;
+  background-color: #C0FDFD;
+  border-color: #89FFFF;
 }
 .navbar-default .navbar-brand {
   color: #495252; /*###Nav bar color*/
@@ -3610,13 +3611,15 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 
+
+/*###thumbnails for crafts*/
 .thumbnail {
   display: block;
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #C0FDFD;
+  border: 2px solid #C0FDFD;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
