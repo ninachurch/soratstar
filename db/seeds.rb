@@ -6,6 +6,11 @@ require 'faker'
 
 @images = ["http://i.imgur.com/3KXQPSl.jpg?1", "http://i.imgur.com/j05J4cu.jpg?1", "http://i.imgur.com/qHPQ3QE.jpg?1"]
 
+
+##item names
+
+@search_items = ["glitter", "puppies", "hats", "ribbon", "cups", "candy"]
+
 ##create sample themes
 4.times do
   Theme.create(name: Faker::Commerce.product_name)
@@ -26,6 +31,6 @@ crafts =  Craft.all
 crafts.each_with_index do |craft, index|
   @craft_id = index + 1
   5.times do
-    Item.create(craft_id: @craft_id, name: Faker::Commerce.product_name)
+    Item.create(craft_id: @craft_id, name: @search_items.sample)
   end
 end
