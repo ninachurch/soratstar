@@ -23,7 +23,7 @@ end
 
 ##create 5 items for each craft
 crafts =  Craft.all
-crafts.each_with_index do |category, index|
+crafts.each_with_index do |craft, index|
   @craft_id = index + 1
   5.times do
     Item.create(craft_id: @craft_id, name: Faker::Commerce.product_name)
