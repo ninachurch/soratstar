@@ -3609,51 +3609,7 @@ a.badge:focus {
   cursor: pointer;
 }
 a.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
-  color: #428bca;
-  background-color: #fff;
-}
-.nav-pills > li > a > .badge {
-  margin-left: 3px;
-}
-.jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
-}
-.jumbotron h1,
-.jumbotron .h1 {
-  color: inherit;
-}
-.jumbotron p {
-  margin-bottom: 15px;
-  font-size: 21px;
-  font-weight: 200;
-}
-.jumbotron > hr {
-  border-top-color: #d5d5d5;
-}
-.container .jumbotron {
-  border-radius: 6px;
-}
-.jumbotron .container {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .container .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-  .jumbotron h1,
-  .jumbotron .h1 {
-    font-size: 63px;
-  }
-}
+
 .thumbnail {
   display: block;
   padding: 4px;
@@ -5095,5 +5051,43 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 
-/*my own work*/
+/*updated*/
 
+.profile {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.profile h1,
+.profile .h1 {
+  color: inherit;
+}
+.profile p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.profile > hr {
+  border-top-color: #d5d5d5;
+}
+.container .profile {
+  border-radius: 6px;
+}
+.profile .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .profile {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .profile {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .profile h1,
+  .profile .h1 {
+    font-size: 63px;
+  }
+}

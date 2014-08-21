@@ -1,7 +1,5 @@
 
 get '/' do
-  p ENV['AWS_ACCESS_KEY_ID']
-  @res = Amazon::Ecs.item_search('glitter', :search_index => 'All')
   erb :index
 end
 
@@ -15,4 +13,10 @@ end
 get '/craft/:id' do
   @craft = crafts.find_by_id(params[:id])
   erb :profile
+end
+
+get '/items' do
+  p ENV['AWS_ACCESS_KEY_ID']
+  @res = Amazon::Ecs.item_search('glitter', :search_index => 'All')
+  erb :items
 end
