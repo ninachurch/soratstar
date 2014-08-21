@@ -1,4 +1,3 @@
-require 'httparty'
 
 get '/' do
   p ENV['AWS_ACCESS_KEY_ID']
@@ -6,7 +5,14 @@ get '/' do
   erb :index
 end
 
+
 get '/home' do
-  @craft = Craft.first
+  @crafts = crafts
+  @crafts_array = @crafts.to_a
   erb :home
+end
+
+get '/craft/:id' do
+  @craft = crafts.find_by_id(params[:id])
+  erb :profile
 end

@@ -13,7 +13,7 @@ end
 
 @themes = Theme.all
 ##create sample craft objects
-6.times do
+9.times do
   Craft.create(name: Faker::Commerce.product_name,
               description: Faker::Company.catch_phrase,
               source_url: Faker::Internet.url('example.com'),
