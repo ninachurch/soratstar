@@ -5061,6 +5061,7 @@ button.close {
 }
 .profile h1,
 .profile .h1 {
+  font-family: 'Yellowtail', cursive;
   color: inherit;
 }
 .profile p {

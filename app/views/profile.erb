@@ -21,10 +21,22 @@
       <div class="tab-pane" id="profile">
 
         <div class="profile">
-          <%@res.items.each do |item|%>
-            <%=item.get('ItemAttributes/Title')%>
-            <%=item.get('ItemAttributes/Title')%>
-          <%end%>
+          <ul class="media-list">
+            <%@res.each do |item|%>
+              <li class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src=<%=@craft.image_url%> >
+                </a>
+                <div class="media-body">
+                  <h1><%=item.get('ItemAttributes/Title')%></h1>
+                  <p>
+                    <%=item.get_element('ItemLink/Description')%>
+                  </p>
+                  <br></br>
+                  <%end%>
+                </div>
+            </li>
+          </ul>
         </div>
 
       </div>
