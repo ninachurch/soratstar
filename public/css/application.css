@@ -3259,8 +3259,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /*##Navbar */
 .navbar-default {
-  background-color: #C0FDFD;
-  border-color: #89FFFF;
+  background-color: #A98EFF;
+  border-color: #664DB7;
 }
 .navbar-default .navbar-brand {
   color: #495252; /*###Nav bar color*/
@@ -3618,8 +3618,8 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #C0FDFD;
-  border: 2px solid #C0FDFD;
+  background-color: rgba(169,142,255,0.4);
+  border: 2px solid rgba(169,142,255,0.4);
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
