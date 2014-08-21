@@ -33,7 +33,7 @@
                   <h1><%=name%></h1>
                   <p>
                     <%=item.get('ItemAttributes/Title')%>
-                    <%=item.get_element('ItemLink/URL')%>
+                    <a href="<%=item.get_element('ItemLink/URL')%>">buy now</a>
                   </p>
                   <br></br>
                   <%end%>

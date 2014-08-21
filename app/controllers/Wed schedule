@@ -5,19 +5,4 @@
 -build template for craft page 3:30-4:15
 -build template for items display 4:20-5:20
 
-    <div class="api-test">
-        <%@res.items.each do |item|%>
-            <%item_attributes = item.get_element('ItemAttributes')%>
-            <%=item_attributes.get('Title')%>
-        <%end%>
-    </div>
-
-              <img src=<%=@craft.image_url%> alt=<%=@craft.name%> />
-              <div class="caption">
-                <p><%=@craft.description%></p>
-                <h6><a href="<%=@craft.source_url%>">from: <%=@craft.source_url%></a></h6>
-                <p><a href="#" class="glyphicon glyphicon-star" class="btn btn-primary" role="button"></a>
-                </div>
-                <p><a class="btn btn-primary btn-lg" role="button">buy supplies</a></p>
-              </div>
-            </div>
+    //***FIX LINK URLS
