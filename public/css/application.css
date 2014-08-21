@@ -5077,6 +5077,8 @@ button.close {
 .profile .container {
   max-width: 100%;
 }
+
+
 @media screen and (min-width: 768px) {
   .profile {
     padding-top: 48px;

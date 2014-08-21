@@ -1,32 +1,36 @@
-<!DOCTYPE html>
-
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-          <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
-          <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-          <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-        </ul>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#home" role="tab" data-toggle="tab">Description</a></li>
+      <li><a href="#profile" role="tab" data-toggle="tab">Supplies</a></li>
 
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home">
         <div class="profile">
           <h1><%=@craft.name%></h1>
-            <img src=<%=@craft.image_url%> alt=<%=@craft.name%> />
-            <div class="caption">
-                <p><%=@craft.description%></p>
-                <h6><a href="<%=@craft.source_url%>">from: <%=@craft.source_url%></a></h6>
-                <p><a href="#" class="glyphicon glyphicon-star" class="btn btn-primary" role="button"></a>
-            </div>
-          <p><a class="btn btn-primary btn-lg" role="button">buy supplies</a></p>
+          <img class="thumbnail" src=<%=@craft.image_url%> />
+          <p><%=@craft.description%></p>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="profile">
+
+        <div class="profile">
+          <%@res.items.each do |item|%>
+            <%=item.get('ItemAttributes/Title')%>
+            <%=item.get('ItemAttributes/Title')%>
+          <%end%>
         </div>
 
-        <div class="tab-content">
-          <div class="tab-pane active" id="home">...</div>
-          <div class="tab-pane" id="profile">...</div>
-          <div class="tab-pane" id="messages">...</div>
-          <div class="tab-pane" id="settings">...</div>
-        </div>
+      </div>
+
     </div>
 
+
+  </div>
 </body>
