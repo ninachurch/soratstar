@@ -4,7 +4,7 @@ require 'faker'
 
 ##image links
 
-@images = ["http://i.imgur.com/3KXQPSl.jpg?1", "http://i.imgur.com/j05J4cu.jpg?1", "http://i.imgur.com/qHPQ3QE.jpg?1"]
+@images = ["http://i.imgur.com/EaNmbVG.jpg?1", "http://i.imgur.com/HGzWgjj.jpg?4883", "http://i.imgur.com/pdEal7q.jpg", "http://i.imgur.com/LtDyYKS.jpg", "http://i.imgur.com/umSuskL.jpg", "http://i.imgur.com/EZZmWHB.jpg", "http://i.imgur.com/NHYBHpL.jpg", "http://i.imgur.com/hMzWUTv.jpg", "http://i.imgur.com/jScJ09K.jpg", "http://i.imgur.com/pcw2EKe.jpg", "http://i.imgur.com/ODypwpx.jpg", "http://i.imgur.com/1Fb0U02.jpg", "http://i.imgur.com/Oeig4I4.jpg", "http://i.imgur.com/kgCQ0uD.jpg"]
 
 
 ##item names
@@ -18,11 +18,11 @@ end
 
 @themes = Theme.all
 ##create sample craft objects
-9.times do
+14.times do |cycle|
   Craft.create(name: Faker::Commerce.product_name,
               description: Faker::Company.catch_phrase,
               source_url: Faker::Internet.url('example.com'),
-              image_url: @images.sample,
+              image_url: @images[cycle],
               theme_id: @themes.sample.id)
 end
 

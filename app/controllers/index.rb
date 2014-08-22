@@ -2,6 +2,7 @@
 get '/' do
   @crafts = crafts
   @crafts_array = @crafts.to_a
+  p @crafts_array
   erb :home
 end
 

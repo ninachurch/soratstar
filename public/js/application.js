@@ -1,3 +1,22 @@
+/*endless scrolling*/
+
+
+$(document).ready(function() {
+  var options = {minMargin: 5, maxMargin: 15, itemSelector: ".item", firstItemClass: "first-item"};
+  $(".container").rowGrid(options);
+
+  // endless scrolling
+  $(window).scroll(function() {
+     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $(".container").append("<div class='item'><img src='path/to/image' width='140' height='100' /></div>");
+        $(".container").rowGrid("appended");
+     }
+  });
+});
+
+
+
+
 /* ========================================================
  * bootstrap-tabs.js v1.3.0
  * http://twitter.github.com/bootstrap/javascript.html#tabs
