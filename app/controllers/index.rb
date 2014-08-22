@@ -24,7 +24,7 @@ get '/craft/:id' do
     @top_res = all_res.items.first
     @res["#{item.name}"] = @top_res
   end
-  p @res
+  # p @res
 
   erb :profile
 end

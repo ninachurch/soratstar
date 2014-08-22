@@ -33,8 +33,11 @@
                   <h1><%=name%></h1>
                   <p>
                     <%=item.get('ItemAttributes/Title')%>
-                    <a href="<%=item.get_element('ItemLinks/ItemLink/URL')%>">buy now</a>
                   </p>
+                  <p>
+                    <a href="<%=item.get_element('ItemLinks/ItemLink/URL').to_s[5..-7] %>">buy now</a>
+                  </p>
+
                   <br></br>
               <%end%>
                 </div>

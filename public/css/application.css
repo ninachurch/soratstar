@@ -55,7 +55,7 @@ body {
   line-height: 1.42857143;
   color: #495252;
   /*background-color: #fff;*/
-  background-color: #F2FEFE;
+  background-color: #ecf0f1;
   font-family: font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
 }
@@ -3259,8 +3259,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /*##Navbar */
 .navbar-default {
-  background-color: #A98EFF;
-  border-color: #664DB7;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
 }
 .navbar-default .navbar-brand {
   color: #495252; /*###Nav bar color*/
@@ -3369,8 +3369,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: rgba(169,142,255,0.4);
-  border: 2px solid rgba(169,142,255,0.4);
+  background-color: white;
+  border: 1px solid #eee;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
@@ -4811,8 +4811,8 @@ button.close {
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: rgba(169,142,255,0.4);
-  border: 2px solid rgba(169,142,255,0.4);
+  background-color: white;
+  border: 1px solid #eee;
 }
 .profile h1,
 .profile .h1 {
